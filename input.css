@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .section-style{
+        @apply w-[40%] l:w-[60%] sm:w-[80%] xs:w-[90%] xxs:w-[99%] h-[400px] flex flex-col justify-end items-start;
+    }
+    .h2-style{
+        @apply font-bold text-gray-300 my-3;
+    }
+    .form-style{
+        @apply w-full h-[360px] p-8 bg-slate-700 rounded-xl flex flex-col justify-start items-center;
+    }
+    .div-input__style{
+        @apply w-full flex flex-col justify-start items-start;
+    }
+    .btn-style{
+        @apply w-1/2 border border-gray-400 py-2 rounded-xl text-gray-400 hover:bg-gray-400 hover:text-slate-700 font-medium;
+    }
+    .div-product{
+        @apply w-full flex justify-between items-center;
+    }
+    .quantity{
+        @apply w-[30px] h-[30px] xxs:w-[25px] xxs:h-[25px] bg-white mobile:text-lg font-bold text-gray-400 rounded-full border-[3px] xxs:border-[2px] border-gray-400 flex justify-center items-center;
+    }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header
+      class="w-full h-[50px] bg-slate-700 flex justify-center items-center gap-3"
+    >
+      <h1 class="font-bold xxs:text-sm text-gray-300">Inventory App using tailwind & Js</h1>
+      <span
+        class="quantity"
+        >7</span
+      >
+    </header>
+    <main
+      class="w-full h-[100%] bg-slate-900 flex flex-col justify-start items-center mx-auto gap-10 px-5 py-16"
+    >
+      <section id="category-section"  class="section-style hidden">
+        <h2 class="h2-style">Add New Category</h2>
+        <form class="form-style">
+          <div class="div-input__style">
+            <label for="title" class="py-2 text-gray-400">title</label>
+            <input
+              type="text"
+              class="w-[240px] xxs:w-full h-[40px] text-gray-400 bg-slate-700 border p-2 rounded-xl outline-blue-700 border-gray-400"
+              id="title"
+            />
+          </div>
+          <div class="div-input__style">
+            <label for="description" class="py-2 text-gray-400"
+              >description</label
+            >
+            <input
+              type="text"
+              class="w-full h-[80px] text-gray-400 text-xl bg-slate-700 border p-2 rounded-xl outline-blue-700 border-gray-400"
+              id="description"
+            />
+          </div>
+          <div class="w-full flex justify-center items-center my-10 gap-2">
+            <button class="btn-style cancel-category-btn">Cancel</button>
+            <button class="btn-style add-category-btn">Add</button>
+          </div>
+        </form>
+      </section>
+      <h3
+        class="add-category text-gray-500 text-left w-[40%] l:w-[60%] sm:w-[80%] xs:w-[90%] cursor-pointer hover:scale-y-110"
+      >
+        Add New Category ?
+      </h3>
+      <section class="section-style">
+        <h2 class="h2-style">Add New Product</h2>
+        <form class="form-style">
+          <div class="div-input__style">
+            <label for="title-product" class="py-2 text-gray-400">title</label>
+            <input
+              type="text"
+              class="w-[240px] xxs:w-full h-[40px] text-gray-400 bg-slate-700 border p-2 rounded-xl outline-blue-700 border-gray-400"
+              id="title-product"
+            />
+          </div>
+          <div class="div-input__style">
+            <label for="quantity-product" class="py-2 text-gray-400"
+              >quantity</label
+            >
+            <input
+              type="text"
+              class="w-[240px] xxs:w-full h-[40px] text-gray-400 bg-slate-700 border p-2 rounded-xl outline-blue-700 border-gray-400"
+              id="quantity-product"
+            />
+          </div>
+          <div class="div-input__style">
+            <label for="category-product" class="py-2 text-gray-400"
+              >category</label
+            >
+            <select
+              name=""
+              class="w-full h-[40px] text-lg bg-slate-700 text-gray-400 border p-2 rounded-xl outline-blue-700 border-gray-400"
+              id="category-product"
+            >
+             
+              <!-- <option value="frontend">frontend</option> -->
+              
+            </select>
+          </div>
+          <button id="add-new-product" class="btn-style w-full my-5">Add New Product</button>
+        </form>
+      </section>
+      <section class="section-style justify-start">
+        <h2 class="h2-style text-xl">Product List</h2>
+        <div class="w-full flex flex-col justify-start items-start gap-8">
+          <div class="div-product">
+            <label class="text-xl sm:text-lg text-gray-400" for="search">search</label>
+            <input
+              type="search"
+              class="w-1/3 bg-slate-900 border border-gray-400 px-2 text-gray-400 outline-blue-950 py-2 rounded-xl"
+              id="input-search"
+            />
+          </div>
+          <div class="div-product">
+            <label class="text-xl sm:text-lg text-gray-400" for="sort">sort</label>
+            <select
+              id="sort"
+              class="w-1/3 bg-slate-900 border text-gray-400 px-2 border-gray-400 outline-blue-950 py-2 rounded-xl"
+            >
+              <option value="newest">newest</option>
+              <option value="oldest">oldest</option>
+            </select>
+          </div>
+          <div id="products" class="w-full flex flex-col justify-center items-center gap-3" >
+            <!-- <div class="product w-full flex justify-between items-center text-gray-400 text-xl md:text-lg mobile:text-sm overflow-auto">
+             <p>title</p>
+             <div class="w-[60%]  flex justify-end items-center gap-2">
+              <span >12/7/2022</span>
+              <span class="border-2 border-gray-400 rounded-full px-3 mobile:px-2 py-1  flex justify-center items-center">category</span>
+              <span class="quantity p-4 mobile:p-2">7</span>
+              <button class="border-2 border-red-600 text-red-600 rounded-full px-3 mobile:px-2 py-1 flex justify-center items-center">delete</button>
+             </div>
+            </div> -->
+        </div>
+      </section>
+    </main>
+    <script type="module" src="../js/app.js"></script>
+  </body>
+</html>
